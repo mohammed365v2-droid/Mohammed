@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ModHaven — Minecraft mods</title>
+<meta name="description" content="12,400+ community Minecraft mods for Java and Bedrock. Search, browse and download.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="logo" href="#"><span class="logo-mark">M</span>ModHaven</a>
+    <nav class="nav">
+      <a href="#" class="active">Mods</a>
+      <a href="#">Modpacks</a>
+      <a href="#">Shaders</a>
+      <a href="#">Resource packs</a>
+    </nav>
+    <span class="spacer"></span>
+    <button class="btn">Sign in</button>
+    <button class="btn btn-primary">Upload mod</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <h1>Find the best Minecraft mods</h1>
+    <p>12,400+ community mods for Java and Bedrock, all in one place.</p>
+    <div class="search">
+      <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M11.5 3C16.1944 3 20 6.80558 20 11.5C20 13.523 19.2933 15.381 18.1132 16.8404L21.1364 19.8636C21.4879 20.2151 21.4879 20.7849 21.1364 21.1364C20.7849 21.4879 20.2151 21.4879 19.8636 21.1364L16.8404 18.1132C15.381 19.2933 13.523 20 11.5 20C6.80558 20 3 16.1944 3 11.5C3 6.80558 6.80558 3 11.5 3ZM11.5 18.2C15.2003 18.2 18.2 15.2003 18.2 11.5C18.2 7.79969 15.2003 4.8 11.5 4.8C7.79969 4.8 4.8 7.79969 4.8 11.5C4.8 15.2003 7.79969 18.2 11.5 18.2Z" fill="currentColor"/>
+      </svg>
+      <input id="q" type="search" placeholder="Search mods, authors, keywords…" autocomplete="off" aria-label="Search mods">
+    </div>
+    <div class="chips" id="chips" role="tablist" aria-label="Category quick filters"></div>
+  </section>
+
+  <!-- Ad slot: leaderboard (970x90) — replace with your ad network tag -->
+  <div class="ad-slot ad-leaderboard" data-ad="leaderboard-970x90">
+    <b>Advertisement</b><span>Leaderboard &middot; 970 &times; 90</span>
+  </div>
+
+  <div class="main">
+
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <div class="cat-list" id="catList"></div>
+
+      <h3>Minecraft version</h3>
+      <select id="ver" class="select" aria-label="Filter by Minecraft version">
+        <option value="">All versions</option>
+        <option>1.21</option><option>1.20</option><option>1.19</option>
+        <option>1.18</option><option>1.12</option>
+      </select>
+
+      <!-- Ad slot: sidebar box (300x250) -->
+      <div class="ad-slot ad-box" data-ad="sidebar-300x250">
+        <b>Advertisement</b><span>Sidebar box &middot; 300 &times; 250</span>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="toolbar">
+        <div class="count"><b id="n">0</b> mods found</div>
+        <span class="spacer"></span>
+        <label class="sort">Sort by
+          <select id="sort">
+            <option value="dl">Most downloaded</option>
+            <option value="rt">Highest rated</option>
+            <option value="up">Recently updated</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="grid" id="grid"></div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>&copy; 2026 ModHaven</span>
+    <a href="#">Terms</a><a href="#">Privacy</a>
+    <a href="#">Advertise with us</a><a href="#">Ad choices</a>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
